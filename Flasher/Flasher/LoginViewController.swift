@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse 
+
 
 class LoginViewController: UIViewController {
 
@@ -20,83 +20,29 @@ class LoginViewController: UIViewController {
 
     @IBAction func pressedLogin(sender: AnyObject) {
         
-        guard let username = usernameField.text where !username.isEmpty else { return alertError("LoginFailed", reason: "Username is empty.") }
-        guard let password = passwordField.text where !password.isEmpty else { return alertError("Login Failed", reason: "Password is empty.") }
+        let usernameRequest = RailsRequest.session()
+        
+        guard let username = usernameField.text where !username.isEmpty else { return }
+        guard let password = passwordField.text where !password.isEmpty else { return }
         
         
         
-        PFUser.logInWithUsernameInBackground(username, password:"password") {
-            (user: PFUser?, error: NSError?) -> Void in
-            if user != nil {
-                // Do stuff after successful login.
-                
-                self.connectUserToDevice()
-                
-                self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
-                
-            } else {
-                // The login failed. Check error to see why.
-            }
-        }
+        usernameRequest.loginWithUsername(username, andPassword: password)
+        
+        
     }
-    
+        
    
     @IBAction func pressedRegister(sender: AnyObject) {
         
         
-        guard let username = usernameField.text where !username.isEmpty else { return alertError("LoginFailed", reason: "Username is empty.") }
-        guard let email = emailField.text where !email.isEmpty else { return alertError("Login Failed", reason: "Email is empty.") }
-        guard let password = passwordField.text where !password.isEmpty else { return alertError("Login Failed", reason: "Password is empty.") }
+    }
         
         
-        let user = PFUser()
-        user.username = username
-        user.password = password
-        user.email = email
-        
-                user.signUpInBackgroundWithBlock {
-            (succeeded: Bool, error: NSError?) -> Void in
             
-            
-            
-            if let error = error {
-                let errorString = error.userInfo["error"] as? NSString
-                // Show the errorString somewhere and let the user try again.
-            } else {
-                // Hooray! Let them use the app now.
-                
-                self.connectUserToDevice()
-                self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
-            }
-        }
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     
     }
 
-    func connectUserToDevice() {
-        
-
-        let installation = PFInstallation.currentInstallation()
-        installation["user"] = PFUser.currentUser()
-        installation.saveInBackground()
-    
     }
-    
-}
-
-extension UIViewController {
-    
-    func alertError(title: String, reason: String) -> () {
-        
-        let alertVC = UIAlertController(title: title, message: reason, preferredStyle: .Alert)
-        alertVC.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: { (action) -> Void in
-            
-            alertVC.dismissViewControllerAnimated(true, completion: nil)
-            
-        }))
-        
-        self.presentViewController(alertVC, animated: true, completion: nil)
-
-  }
-
-}
