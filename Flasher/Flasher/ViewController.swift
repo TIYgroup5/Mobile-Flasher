@@ -33,7 +33,24 @@ class ViewController: UIViewController  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func deckData() {
+        
+        var info = RequestInfo()
+        
+        info.endpoint = "/decks"
+        info.method = .GET
+        
+        RailsRequest.session().requestWithInfo(info) { (returnedInfo) -> () in
+        
+            // set picker array = returnedInfo["deck"]
+            // reload picker
+            
+        }
+    
+    }
 
     
 }
+
 
