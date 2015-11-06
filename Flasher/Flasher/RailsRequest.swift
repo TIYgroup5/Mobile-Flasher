@@ -37,23 +37,46 @@ class RailsRequest: NSObject {
     func loginWithUsername(username: String, andPassword password: String) {
         var info = RequestInfo()
         
-      info.endpoint = "/users/login"
+      info.endpoint = "/login"
         info.method = .POST
         info.parameters = [
         
             "username" : username,
-//            "full_name" : fullname,
             "password" : password
         
     ]
-        
+
+    
         requestWithInfo(info) { (returnedInfo) -> () in
+            
+        }
+        
+        func registerWithUsername(username: String, andPassword password: String, fullname: String, email: String) {
+                var info = RequestInfo()
+                
+                info.endpoint = "/signup"
+                info.method = .POST
+                info.parameters = [
+    
+    
+                    "username" : username,
+                    "full_name" : fullname,
+                    "email" : email,
+                    "password" : password
+                    
+                ]
+                
+                requestWithInfo(info) { (returnedInfo) -> () in
+    
+
+                    
+
             
             // here we grab the access token & user id in cards table view controller ,
             
             if let user = returnedInfo?["user"] as? [String:AnyObject] {
                 
-                if let key = user["access_Key"] as? String {
+                if let key = user["auth_token"] as? String {
                     
                     self.token = key
                     
@@ -103,6 +126,8 @@ class RailsRequest: NSObject {
             
         }
         
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
         // creates a task from request - based on network connectivity
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
             
@@ -143,4 +168,5 @@ struct RequestInfo {
     var parameters: [String:AnyObject] = [:]
 }
 
+}
 }
