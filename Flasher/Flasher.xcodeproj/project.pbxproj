@@ -10,7 +10,6 @@
 		370DB98F1BEAFB5900144943 /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 370DB98E1BEAFB5900144943 /* PermanentMarker.ttf */; };
 		370DB9911BEAFFCD00144943 /* flash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 370DB9901BEAFFCD00144943 /* flash.gif */; };
 		370DB9B31BEBE2AD00144943 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370DB9B21BEBE2AD00144943 /* User.storyboard */; };
-		370DB9C71BEBF96700144943 /* DeckCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9C61BEBF96700144943 /* DeckCollectionViewController.swift */; };
 		370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */; };
 		370DB9CD1BEBFC4000144943 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */; };
 		370DB9CF1BEBFC4E00144943 /* difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CE1BEBFC4E00144943 /* difficulty.swift */; };
@@ -33,7 +32,6 @@
 		370DB98E1BEAFB5900144943 /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermanentMarker.ttf; sourceTree = "<group>"; };
 		370DB9901BEAFFCD00144943 /* flash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flash.gif; sourceTree = "<group>"; };
 		370DB9B21BEBE2AD00144943 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
-		370DB9C61BEBF96700144943 /* DeckCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeckCollectionViewController.swift; path = ../../../../DeckCollectionViewController.swift; sourceTree = "<group>"; };
 		370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
 		370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		370DB9CE1BEBFC4E00144943 /* difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = difficulty.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		370DB9B41BEBE31F00144943 /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
-				370DB9C61BEBF96700144943 /* DeckCollectionViewController.swift */,
 				370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */,
 				370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */,
 				370DB9CE1BEBFC4E00144943 /* difficulty.swift */,
@@ -223,7 +220,6 @@
 				370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */,
 				370DB9D51BEC010E00144943 /* Questions.swift in Sources */,
 				379631901BEA955B00543278 /* AppDelegate.swift in Sources */,
-				370DB9C71BEBF96700144943 /* DeckCollectionViewController.swift in Sources */,
 				370DB9DB1BEC015A00144943 /* loginViewController.swift in Sources */,
 				370DB9D71BEC012D00144943 /* GamePlayViewController.swift in Sources */,
 				370DB9CD1BEBFC4000144943 /* StartGameViewController.swift in Sources */,

@@ -8,14 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController,  {
+class ViewController: UIViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-      let animatedImageView = UIImage.ini
-        
+
 //        UIImageView* animatedImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
 //        animatedImageView.animationImages = [NSArray arrayWithObjects:
 //            [UIImage imageNamed:@"image1.gif"],
@@ -35,6 +34,6 @@ class ViewController: UIViewController,  {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
