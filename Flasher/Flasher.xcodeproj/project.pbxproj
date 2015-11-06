@@ -20,6 +20,7 @@
 		370DB9D91BEC014000144943 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D81BEC014000144943 /* GIFViewController.swift */; };
 		370DB9DB1BEC015A00144943 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9DA1BEC015A00144943 /* loginViewController.swift */; };
 		370DB9DD1BEC016C00144943 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9DC1BEC016C00144943 /* registerViewController.swift */; };
+		3765B94F1BED204D00A2EBB8 /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765B94E1BED204D00A2EBB8 /* RailsRequest.swift */; };
 		379631901BEA955B00543278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796318F1BEA955B00543278 /* AppDelegate.swift */; };
 		379631921BEA955B00543278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379631911BEA955B00543278 /* ViewController.swift */; };
 		379631951BEA955B00543278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379631931BEA955B00543278 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		370DB9D81BEC014000144943 /* GIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		370DB9DA1BEC015A00144943 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		370DB9DC1BEC016C00144943 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		3765B94E1BED204D00A2EBB8 /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
 		3796318C1BEA955B00543278 /* Flasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3796318F1BEA955B00543278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379631911BEA955B00543278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Flasher/ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				370DB9901BEAFFCD00144943 /* flash.gif */,
+				3765B94E1BED204D00A2EBB8 /* RailsRequest.swift */,
 				379631931BEA955B00543278 /* Main.storyboard */,
 				370DB9B21BEBE2AD00144943 /* User.storyboard */,
 				370DB98D1BEAFB3800144943 /* Resources */,
@@ -218,6 +221,7 @@
 				379631A41BEA994800543278 /* Buttons.swift in Sources */,
 				379631921BEA955B00543278 /* ViewController.swift in Sources */,
 				370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */,
+				3765B94F1BED204D00A2EBB8 /* RailsRequest.swift in Sources */,
 				370DB9D51BEC010E00144943 /* Questions.swift in Sources */,
 				379631901BEA955B00543278 /* AppDelegate.swift in Sources */,
 				370DB9DB1BEC015A00144943 /* loginViewController.swift in Sources */,

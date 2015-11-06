@@ -10,7 +10,11 @@ import UIKit
 
 class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    @IBOutlet weak var chooseDeck: UIPickerView!
+    @IBOutlet weak var chooseDeck: UIButton!
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
+    @IBOutlet weak var findDeck: UIPickerView!
     
     let pickerData =
         
@@ -19,8 +23,8 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        chooseDeck.dataSource = self
-        chooseDeck.delegate = self
+        findDeck.dataSource = self
+        findDeck.delegate = self
         
     }
     //MARK: - Delegates and data sources
@@ -46,6 +50,10 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
         return pickerLabel
         
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        textLabel.text = pickerData[row]
     }
     
     override func didReceiveMemoryWarning() {

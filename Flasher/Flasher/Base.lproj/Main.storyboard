@@ -11,7 +11,6 @@
             <string>PermanentMarker</string>
             <string>PermanentMarker</string>
             <string>PermanentMarker</string>
-            <string>PermanentMarker</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -32,29 +31,36 @@
                                 <animations/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upk-gK-KB9">
-                                <rect key="frame" x="0.0" y="194" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="135" width="375" height="216"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.30588235294117649" alpha="0.081872888513513459" colorSpace="calibratedRGB"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a deck:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZz-uI-vmL">
-                                <rect key="frame" x="31" y="147" width="312" height="63"/>
+                                <rect key="frame" x="31" y="64" width="312" height="63"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="38"/>
                                 <color key="textColor" red="0.90980392156862744" green="0.60784313725490191" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-iD-sTJ">
-                                <rect key="frame" x="107" y="437" width="160" height="52"/>
+                                <rect key="frame" x="107" y="420" width="160" height="70"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="40"/>
-                                <state key="normal" title="CHOOSE">
+                                <state key="normal" title="play">
                                     <color key="titleColor" red="0.90980392156862744" green="0.60784313725490191" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.52969831289425784" green="1" blue="0.83256265429129028" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JxI-9P-5Bp" kind="show" id="pck-3o-Yf6"/>
+                                    <segue destination="7un-e3-YAT" kind="show" id="A7c-Sk-eZY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6a-DS-0jk">
+                                <rect key="frame" x="59" y="371" width="256" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,70 +74,14 @@
                     <navigationItem key="navigationItem" id="geP-kK-4bl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="chooseDeck" destination="upk-gK-KB9" id="8cM-xc-6xN"/>
+                        <outlet property="chooseDeck" destination="Lt4-iD-sTJ" id="ikF-Pk-Kyb"/>
+                        <outlet property="findDeck" destination="upk-gK-KB9" id="XCK-Nq-uI5"/>
+                        <outlet property="textLabel" destination="z6a-DS-0jk" id="dIm-Ki-vjd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGK-zJ-lCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1374.5" y="153.5"/>
-        </scene>
-        <!--Start Game View Controller-->
-        <scene sceneID="FcB-3o-m3w">
-            <objects>
-                <viewController id="JxI-9P-5Bp" customClass="StartGameViewController" customModule="Flasher" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tsc-go-Vgz"/>
-                        <viewControllerLayoutGuide type="bottom" id="OkN-pA-adJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="I0y-oT-DeM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dude-bg" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-aG-lvb">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Deck Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3c-qC-yKV">
-                                <rect key="frame" x="93" y="62" width="189" height="47"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-Ac-znq">
-                                <rect key="frame" x="92" y="516" width="191" height="52"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="42"/>
-                                <state key="normal" title="play!">
-                                    <color key="titleColor" red="0.90980392156862744" green="0.60784313725490191" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="startGame:" destination="JxI-9P-5Bp" eventType="touchUpInside" id="iEp-nE-bzr"/>
-                                    <segue destination="7un-e3-YAT" kind="show" id="Gyr-PM-tiv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="U3c-qC-yKV" firstAttribute="leading" secondItem="I0y-oT-DeM" secondAttribute="leading" constant="93" id="9qm-kL-NFx"/>
-                            <constraint firstItem="fhc-Ac-znq" firstAttribute="top" secondItem="U3c-qC-yKV" secondAttribute="bottom" constant="407" id="Mdk-fF-REO"/>
-                            <constraint firstItem="fhc-Ac-znq" firstAttribute="leading" secondItem="I0y-oT-DeM" secondAttribute="leading" constant="92" id="SBA-p8-RmH"/>
-                            <constraint firstAttribute="trailing" secondItem="U3c-qC-yKV" secondAttribute="trailing" constant="93" id="XR6-V2-Gn8"/>
-                            <constraint firstAttribute="trailing" secondItem="fhc-Ac-znq" secondAttribute="trailing" constant="92" id="Xct-fn-1Sk"/>
-                            <constraint firstItem="OkN-pA-adJ" firstAttribute="top" secondItem="fhc-Ac-znq" secondAttribute="bottom" constant="99" id="ZMS-zw-GaD"/>
-                            <constraint firstItem="fhc-Ac-znq" firstAttribute="top" secondItem="U3c-qC-yKV" secondAttribute="bottom" constant="407" id="ueW-Yt-ZPp"/>
-                            <constraint firstItem="U3c-qC-yKV" firstAttribute="top" secondItem="tsc-go-Vgz" secondAttribute="bottom" constant="42" id="yYu-43-tcm"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="deckName" destination="U3c-qC-yKV" id="D79-Yt-G2F"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OuB-Ee-4i4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1888.5" y="153.5"/>
         </scene>
         <!--Game Play View Controller-->
         <scene sceneID="uf8-pL-eST">
@@ -145,12 +95,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="just-bg" translatesAutoresizingMaskIntoConstraints="NO" id="LP0-V9-RhR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="just-bg" translatesAutoresizingMaskIntoConstraints="NO" id="LP0-V9-RhR">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.60784313725490191" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the question that will be asked will display here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8z-Y2-XbO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="the question that will be asked will display here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8z-Y2-XbO">
                                 <rect key="frame" x="20" y="166" width="335" height="155"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="30"/>
@@ -195,12 +145,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="answerField" destination="8vz-u7-xMw" id="7Ur-aK-IgP"/>
                         <outlet property="questionView" destination="N8z-Y2-XbO" id="wgi-Oy-Xwj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8a-Up-lF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404.5" y="153.5"/>
+            <point key="canvasLocation" x="1845.5" y="153.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cw6-qj-P9A">
@@ -223,7 +174,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dude-bg" width="576" height="883"/>
         <image name="just-bg" width="576" height="883"/>
     </resources>
 </document>
