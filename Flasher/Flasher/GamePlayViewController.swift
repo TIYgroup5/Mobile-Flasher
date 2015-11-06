@@ -10,6 +10,11 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
 
+    @IBOutlet weak var questionView: UILabel!
+    
+    @IBAction func submitAnswer(sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

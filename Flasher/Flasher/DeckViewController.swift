@@ -22,16 +22,6 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         chooseDeck.dataSource = self
         chooseDeck.delegate = self
         
-//        for family in UIFont.familyNames() {
-//            
-//            for font in UIFont.fontNamesForFamilyName(family) {
-//                
-//                print(font)
-//                
-//            }
-//            
-//        }
-        
     }
     //MARK: - Delegates and data sources
     //MARK: Data Sources
@@ -42,20 +32,13 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         return pickerData.count
     }
     
-//    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-//        let titleData = pickerData[row]
-//        let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "PermanentMarker", size: 15.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
-//        return myTitle
-//    }
-    
     func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
         var pickerLabel = view as! UILabel!
         if view == nil {  //if no label there yet
             pickerLabel = UILabel()
-            //color the label's background
-//            let hue = CGFloat(row)/CGFloat(pickerData.count)
-//            pickerLabel.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            
         }
+        
         let titleData = pickerData[row]
         let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "PermanentMarker", size: 26.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
         pickerLabel!.attributedText = myTitle

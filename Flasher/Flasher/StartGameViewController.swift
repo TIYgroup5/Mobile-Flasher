@@ -10,6 +10,10 @@ import UIKit
 
 class StartGameViewController: UIViewController {
 
+    @IBOutlet weak var deckName: UILabel!
+    
+    @IBAction func startGame(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
