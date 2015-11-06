@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370DB98F1BEAFB5900144943 /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 370DB98E1BEAFB5900144943 /* PermanentMarker.ttf */; };
+		370DB9911BEAFFCD00144943 /* flash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 370DB9901BEAFFCD00144943 /* flash.gif */; };
+		370DB9B31BEBE2AD00144943 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370DB9B21BEBE2AD00144943 /* User.storyboard */; };
+		370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */; };
+		370DB9CD1BEBFC4000144943 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */; };
+		370DB9CF1BEBFC4E00144943 /* difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CE1BEBFC4E00144943 /* difficulty.swift */; };
+		370DB9D11BEBFC5800144943 /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D01BEBFC5800144943 /* timer.swift */; };
+		370DB9D31BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D21BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift */; };
+		370DB9D51BEC010E00144943 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D41BEC010E00144943 /* Questions.swift */; };
+		370DB9D71BEC012D00144943 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D61BEC012D00144943 /* GamePlayViewController.swift */; };
+		370DB9D91BEC014000144943 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D81BEC014000144943 /* GIFViewController.swift */; };
+		370DB9DB1BEC015A00144943 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9DA1BEC015A00144943 /* loginViewController.swift */; };
+		370DB9DD1BEC016C00144943 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9DC1BEC016C00144943 /* registerViewController.swift */; };
+		3765B94F1BED204D00A2EBB8 /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765B94E1BED204D00A2EBB8 /* RailsRequest.swift */; };
 		379631901BEA955B00543278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796318F1BEA955B00543278 /* AppDelegate.swift */; };
 		379631921BEA955B00543278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379631911BEA955B00543278 /* ViewController.swift */; };
 		379631951BEA955B00543278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379631931BEA955B00543278 /* Main.storyboard */; };
@@ -16,14 +30,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		370DB98E1BEAFB5900144943 /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermanentMarker.ttf; sourceTree = "<group>"; };
+		370DB9901BEAFFCD00144943 /* flash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flash.gif; sourceTree = "<group>"; };
+		370DB9B21BEBE2AD00144943 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
+		370DB9CE1BEBFC4E00144943 /* difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = difficulty.swift; sourceTree = "<group>"; };
+		370DB9D01BEBFC5800144943 /* timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
+		370DB9D21BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckStartGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		370DB9D41BEC010E00144943 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		370DB9D61BEC012D00144943 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		370DB9D81BEC014000144943 /* GIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
+		370DB9DA1BEC015A00144943 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		370DB9DC1BEC016C00144943 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		3765B94E1BED204D00A2EBB8 /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
 		3796318C1BEA955B00543278 /* Flasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3796318F1BEA955B00543278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		379631911BEA955B00543278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		379631911BEA955B00543278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Flasher/ViewController.swift; sourceTree = "<group>"; };
 		379631941BEA955B00543278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		379631961BEA955B00543278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		379631991BEA955B00543278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3796319B1BEA955B00543278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		379631A31BEA994800543278 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		379631A31BEA994800543278 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Buttons.swift; path = Flasher/Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +65,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370DB98D1BEAFB3800144943 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				370DB98E1BEAFB5900144943 /* PermanentMarker.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		370DB9B41BEBE31F00144943 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */,
+				370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */,
+				370DB9CE1BEBFC4E00144943 /* difficulty.swift */,
+				370DB9D01BEBFC5800144943 /* timer.swift */,
+				370DB9D21BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift */,
+				370DB9D41BEC010E00144943 /* Questions.swift */,
+				370DB9D61BEC012D00144943 /* GamePlayViewController.swift */,
+				370DB9D81BEC014000144943 /* GIFViewController.swift */,
+			);
+			name = MainFlow;
+			sourceTree = "<group>";
+		};
+		370DB9B51BEBE32A00144943 /* UserFlow */ = {
+			isa = PBXGroup;
+			children = (
+				370DB9DA1BEC015A00144943 /* loginViewController.swift */,
+				370DB9DC1BEC016C00144943 /* registerViewController.swift */,
+			);
+			name = UserFlow;
+			sourceTree = "<group>";
+		};
 		379631831BEA955B00543278 = {
 			isa = PBXGroup;
 			children = (
+				370DB9901BEAFFCD00144943 /* flash.gif */,
+				3765B94E1BED204D00A2EBB8 /* RailsRequest.swift */,
+				379631931BEA955B00543278 /* Main.storyboard */,
+				370DB9B21BEBE2AD00144943 /* User.storyboard */,
+				370DB98D1BEAFB3800144943 /* Resources */,
+				379631911BEA955B00543278 /* ViewController.swift */,
+				379631A31BEA994800543278 /* Buttons.swift */,
 				3796318E1BEA955B00543278 /* Flasher */,
 				3796318D1BEA955B00543278 /* Products */,
 			);
@@ -56,15 +123,22 @@
 		3796318E1BEA955B00543278 /* Flasher */ = {
 			isa = PBXGroup;
 			children = (
-				3796318F1BEA955B00543278 /* AppDelegate.swift */,
-				379631911BEA955B00543278 /* ViewController.swift */,
-				379631931BEA955B00543278 /* Main.storyboard */,
-				379631A31BEA994800543278 /* Buttons.swift */,
+				370DB9B41BEBE31F00144943 /* MainFlow */,
+				370DB9B51BEBE32A00144943 /* UserFlow */,
+				379631A61BEAB0EC00543278 /* Supporting Files */,
 				379631961BEA955B00543278 /* Assets.xcassets */,
+				3796318F1BEA955B00543278 /* AppDelegate.swift */,
 				379631981BEA955B00543278 /* LaunchScreen.storyboard */,
 				3796319B1BEA955B00543278 /* Info.plist */,
 			);
 			path = Flasher;
+			sourceTree = "<group>";
+		};
+		379631A61BEAB0EC00543278 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +167,9 @@
 		379631841BEA955B00543278 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Resources,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Anjel Villafranco";
@@ -128,6 +205,9 @@
 				3796319A1BEA955B00543278 /* LaunchScreen.storyboard in Resources */,
 				379631971BEA955B00543278 /* Assets.xcassets in Resources */,
 				379631951BEA955B00543278 /* Main.storyboard in Resources */,
+				370DB9911BEAFFCD00144943 /* flash.gif in Resources */,
+				370DB98F1BEAFB5900144943 /* PermanentMarker.ttf in Resources */,
+				370DB9B31BEBE2AD00144943 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +220,18 @@
 			files = (
 				379631A41BEA994800543278 /* Buttons.swift in Sources */,
 				379631921BEA955B00543278 /* ViewController.swift in Sources */,
+				370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */,
+				3765B94F1BED204D00A2EBB8 /* RailsRequest.swift in Sources */,
+				370DB9D51BEC010E00144943 /* Questions.swift in Sources */,
 				379631901BEA955B00543278 /* AppDelegate.swift in Sources */,
+				370DB9DB1BEC015A00144943 /* loginViewController.swift in Sources */,
+				370DB9D71BEC012D00144943 /* GamePlayViewController.swift in Sources */,
+				370DB9CD1BEBFC4000144943 /* StartGameViewController.swift in Sources */,
+				370DB9CF1BEBFC4E00144943 /* difficulty.swift in Sources */,
+				370DB9D31BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift in Sources */,
+				370DB9D11BEBFC5800144943 /* timer.swift in Sources */,
+				370DB9D91BEC014000144943 /* GIFViewController.swift in Sources */,
+				370DB9DD1BEC016C00144943 /* registerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +244,7 @@
 				379631941BEA955B00543278 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Flasher;
 			sourceTree = "<group>";
 		};
 		379631981BEA955B00543278 /* LaunchScreen.storyboard */ = {
@@ -288,6 +380,7 @@
 				379631A01BEA955B00543278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
