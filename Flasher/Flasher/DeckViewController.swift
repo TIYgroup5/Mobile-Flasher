@@ -8,7 +8,7 @@
 
 import UIKit
 
-var selectedDeckId: String = ""
+var selectedDeckId: Int = 0
 
 class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
     {
@@ -86,7 +86,7 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         textLabel.text = pickerData[row]["title"] as? String
-        selectedDeckId = pickerData[row]["id"] as? String ?? ""
+        selectedDeckId = (pickerData[row]["id"] as? Int)! 
         
     }
     

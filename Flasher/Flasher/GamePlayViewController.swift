@@ -47,7 +47,7 @@ class GamePlayViewController: UIViewController {
                 print(id)
             }
             // reload picker
-            
+            print(selectedDeckId)
         }
 
     func didReceiveMemoryWarning() {
