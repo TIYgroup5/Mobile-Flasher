@@ -8,7 +8,10 @@
 
 import UIKit
 
-class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+var selectedDeckId: String = ""
+
+class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
+    {
     
     @IBOutlet weak var chooseDeck: UIButton!
     
@@ -16,9 +19,7 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBOutlet weak var findDeck: UIPickerView!
     
-    let pickerData =
-        
-        ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
+    var pickerData: [[String:AnyObject]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,31 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         findDeck.dataSource = self
         findDeck.delegate = self
         
+        var info = RequestInfo()
+        
+        info.endpoint = "/decks"
+        info.method = .GET
+        
+        RailsRequest.session().requestWithInfo(info) { (returnedInfo) -> () in
+            
+            print(returnedInfo)
+            
+            if let decks = returnedInfo?["decks"] as? [[String:AnyObject]] {
+                
+                self.pickerData = decks
+                self.findDeck.reloadAllComponents()
+                
+            }
+            
+            if let id = returnedInfo?["id"] as? [[String:AnyObject]] {
+                
+                self.pickerData = id
+                self.findDeck.reloadAllComponents()
+                
+            }
+        }
     }
+    
     //MARK: - Delegates and data sources
     //MARK: Data Sources
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -37,14 +62,18 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+       
         var pickerLabel = view as! UILabel!
+        
         if view == nil {  //if no label there yet
             pickerLabel = UILabel()
             
         }
         
-        let titleData = pickerData[row]
+        let titleData = pickerData[row]["title"] as! String
+       
         let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "PermanentMarker", size: 26.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
+       
         pickerLabel!.attributedText = myTitle
         pickerLabel!.textAlignment = .Center
         
@@ -52,11 +81,17 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
     }
     
+    
+    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        textLabel.text = pickerData[row]
+        
+        textLabel.text = pickerData[row]["title"] as? String
+        selectedDeckId = pickerData[row]["id"] as? String ?? ""
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
     }
 }

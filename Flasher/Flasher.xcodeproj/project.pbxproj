@@ -10,14 +10,10 @@
 		370DB9911BEAFFCD00144943 /* flash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 370DB9901BEAFFCD00144943 /* flash.gif */; };
 		370DB9B31BEBE2AD00144943 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370DB9B21BEBE2AD00144943 /* User.storyboard */; };
 		370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */; };
-		370DB9CD1BEBFC4000144943 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */; };
-		370DB9CF1BEBFC4E00144943 /* difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9CE1BEBFC4E00144943 /* difficulty.swift */; };
-		370DB9D11BEBFC5800144943 /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D01BEBFC5800144943 /* timer.swift */; };
-		370DB9D31BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D21BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift */; };
-		370DB9D51BEC010E00144943 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D41BEC010E00144943 /* Questions.swift */; };
 		370DB9D71BEC012D00144943 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D61BEC012D00144943 /* GamePlayViewController.swift */; };
 		370DB9D91BEC014000144943 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9D81BEC014000144943 /* GIFViewController.swift */; };
 		370DB9DD1BEC016C00144943 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DB9DC1BEC016C00144943 /* RegisterViewController.swift */; };
+		3787C9EB1BED3EDC0092C03D /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3787C9EA1BED3EDC0092C03D /* PermanentMarker.ttf */; };
 		379631901BEA955B00543278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796318F1BEA955B00543278 /* AppDelegate.swift */; };
 		379631921BEA955B00543278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379631911BEA955B00543278 /* ViewController.swift */; };
 		379631951BEA955B00543278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379631931BEA955B00543278 /* Main.storyboard */; };
@@ -32,14 +28,10 @@
 		370DB9901BEAFFCD00144943 /* flash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flash.gif; path = ../flash.gif; sourceTree = "<group>"; };
 		370DB9B21BEBE2AD00144943 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = User.storyboard; path = ../User.storyboard; sourceTree = "<group>"; };
 		370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
-		370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
-		370DB9CE1BEBFC4E00144943 /* difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = difficulty.swift; sourceTree = "<group>"; };
-		370DB9D01BEBFC5800144943 /* timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
-		370DB9D21BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckStartGameCollectionViewCell.swift; sourceTree = "<group>"; };
-		370DB9D41BEC010E00144943 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		370DB9D61BEC012D00144943 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		370DB9D81BEC014000144943 /* GIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		370DB9DC1BEC016C00144943 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3787C9EA1BED3EDC0092C03D /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermanentMarker.ttf; sourceTree = "<group>"; };
 		3796318C1BEA955B00543278 /* Flasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3796318F1BEA955B00543278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379631911BEA955B00543278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,11 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				370DB9CA1BEBFC2B00144943 /* DeckViewController.swift */,
-				370DB9CC1BEBFC4000144943 /* StartGameViewController.swift */,
-				370DB9CE1BEBFC4E00144943 /* difficulty.swift */,
-				370DB9D01BEBFC5800144943 /* timer.swift */,
-				370DB9D21BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift */,
-				370DB9D41BEC010E00144943 /* Questions.swift */,
 				370DB9D61BEC012D00144943 /* GamePlayViewController.swift */,
 				370DB9D81BEC014000144943 /* GIFViewController.swift */,
 			);
@@ -106,6 +93,7 @@
 		3796318E1BEA955B00543278 /* Flasher */ = {
 			isa = PBXGroup;
 			children = (
+				3787C9EA1BED3EDC0092C03D /* PermanentMarker.ttf */,
 				370DB9901BEAFFCD00144943 /* flash.gif */,
 				379631931BEA955B00543278 /* Main.storyboard */,
 				370DB9B21BEBE2AD00144943 /* User.storyboard */,
@@ -190,6 +178,7 @@
 				379631971BEA955B00543278 /* Assets.xcassets in Resources */,
 				379631951BEA955B00543278 /* Main.storyboard in Resources */,
 				370DB9911BEAFFCD00144943 /* flash.gif in Resources */,
+				3787C9EB1BED3EDC0092C03D /* PermanentMarker.ttf in Resources */,
 				370DB9B31BEBE2AD00144943 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,13 +193,8 @@
 				822C4F5D1BEAB07400D5B7B7 /* LoginViewController.swift in Sources */,
 				379631921BEA955B00543278 /* ViewController.swift in Sources */,
 				370DB9CB1BEBFC2B00144943 /* DeckViewController.swift in Sources */,
-				370DB9D51BEC010E00144943 /* Questions.swift in Sources */,
 				379631901BEA955B00543278 /* AppDelegate.swift in Sources */,
 				370DB9D71BEC012D00144943 /* GamePlayViewController.swift in Sources */,
-				370DB9CD1BEBFC4000144943 /* StartGameViewController.swift in Sources */,
-				370DB9CF1BEBFC4E00144943 /* difficulty.swift in Sources */,
-				370DB9D31BEBFC9700144943 /* DeckStartGameCollectionViewCell.swift in Sources */,
-				370DB9D11BEBFC5800144943 /* timer.swift in Sources */,
 				370DB9D91BEC014000144943 /* GIFViewController.swift in Sources */,
 				370DB9DD1BEC016C00144943 /* RegisterViewController.swift in Sources */,
 				822C4F841BED3C0E00D5B7B7 /* RailsRequest.swift in Sources */,

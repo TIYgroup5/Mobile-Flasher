@@ -10,9 +10,9 @@
 
 import UIKit
 
-private let _rr = RailsRequest()
+let _rr = RailsRequest()
 
-private let _d = NSUserDefaults.standardUserDefaults()
+let _d = NSUserDefaults.standardUserDefaults()
 
 class RailsRequest: NSObject {
     
@@ -48,6 +48,18 @@ class RailsRequest: NSObject {
         
         requestWithInfo(info) { (returnedInfo) -> () in
             
+            print(returnedInfo)
+            
+            if let user = returnedInfo?["user"] as? [String:AnyObject] {
+                
+                if let key = user["auth_token"] as? String {
+                    
+                    self.token = key
+                    
+                    print(self.token)
+                }
+            }
+            
         }
         
     }
@@ -70,7 +82,7 @@ class RailsRequest: NSObject {
         requestWithInfo(info) { (returnedInfo) -> () in
             
             
-            
+            print(returnedInfo)
             
             
             // here we grab the access token & user id in cards table view controller ,
@@ -115,9 +127,9 @@ class RailsRequest: NSObject {
         if let token = token {
             
             // can add token when they give it to you
-            request.setValue(token, forHTTPHeaderField: "auth_token")
+            request.setValue(token, forHTTPHeaderField: "Access-Token")
             
-            
+            print(token)
             
         }
         
@@ -140,33 +152,35 @@ class RailsRequest: NSObject {
                 
             }
             
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            
-            // creates a task from request - based on network connectivity
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
-                
-                
-                
-                // work with data returned
-                
-                if let data = data {
-                    
-                    // have data
-                    
-                    if let returnedInfo = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) {
-                        
-                        completion(returnedInfo: returnedInfo)
-                        
-                    }
-                    
-                } else {
-                    
-                    // no data: check for error and return alert from
-                }
-            }
-            task.resume()
             
         }
+        
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // creates a task from request - based on network connectivity
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+            
+            print(data)
+            
+            // work with data returned
+            
+            if let data = data {
+                
+                // have data
+                
+                if let returnedInfo = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) {
+                    
+                    completion(returnedInfo: returnedInfo)
+                    
+                }
+                
+            } else {
+                
+                // no data: check for error and return alert from
+            }
+        }
+        task.resume()
         
     }
 }
