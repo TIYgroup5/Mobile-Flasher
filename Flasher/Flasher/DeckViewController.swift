@@ -19,6 +19,9 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBOutlet weak var findDeck: UIPickerView!
     
+    @IBAction func timerModeSwitch(sender: AnyObject) {
+    }
+    
     var pickerData: [[String:AnyObject]] = []
     
     override func viewDidLoad() {
@@ -52,8 +55,6 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         }
     }
     
-    //MARK: - Delegates and data sources
-    //MARK: Data Sources
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -81,17 +82,16 @@ class DeckViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
     }
     
-    
-    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         textLabel.text = pickerData[row]["title"] as? String
         selectedDeckId = (pickerData[row]["id"] as? Int)! 
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
 }
+
+    
+        
+
+
+
