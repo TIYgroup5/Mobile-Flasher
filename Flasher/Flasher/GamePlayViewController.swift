@@ -53,7 +53,7 @@ class GamePlayViewController: UIViewController, UITextFieldDelegate {
                 answerField.text = nil
                 currentCard++
                 loadCard()
-            }
+             }
         }
         return true
         
